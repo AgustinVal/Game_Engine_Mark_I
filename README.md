@@ -6,6 +6,7 @@ realizar juegos de peleas similares a por ejemplo:
 * Mortal Kombat Armagedon 
 * Naruto Shippuden: Ultimate Ninja Storm 4 
 * Otros
+
 Es decir, crear juegos de peleas en 3D que permitan el movimiendo por el entorno, 
 idealmente la cámara se encontrará detras del personaje a usar y apuntando al 
 personaje enemigo.
