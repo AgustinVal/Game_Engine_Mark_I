@@ -11,8 +11,8 @@ add_executable(main
     "BoundingBox.cpp"
     "point.h"
     "point.cpp"
-    "Vector2D.h"
-    "Vector2D.cpp"
+    "Vector3D.h"
+    "Vector3D.cpp"
 )
 
 # We also could have done:

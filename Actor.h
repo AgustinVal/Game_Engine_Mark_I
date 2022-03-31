@@ -1,33 +1,21 @@
 #pragma once
 #include <iostream>
 #include "point.h"
-#include "Vector2D.h"
+#include "Vector3D.h"
 #include "BoundingBox.h"
 
 class Actor
 {
+private:
+    Vector3D mPos, mVel;
+    float mLength, mWeight, mHeight;  //x, y, z, por ahora lo modelare como un cubo
 public:
-    Actor() :
-        aPos{ 0, 0 },
-        aVel{ aPos, aPos },
-        aHigh{ 0 },
-        aWeight{ 0 }
-        {}
-
-        Actor(const Point& pos_, const Vector2D& vel_, const float high_, const float weight_);
-
-        const Point& pos() const;
-
-        const Vector2D& vel() const;
-
-        const float high() const;
-
-        const float weight() const;
-
-        void update(float delta_tiempo) const {;
-
-    private:
-        Point aPos;
-        Vector2D aVel;
-        float aHigh, aWeight;
+    Actor(const Vector3D& pos, const Vector3D& vel, const float lenght, const float weight, const float height);
+    const Vector3D& pos() const;
+    const Vector3D& vel() const;
+    const float lenght() const; 
+    const float weight() const;
+    const float height() const;
+    void update(float delta_tiempo) const;
+    BoundingBox boundingBox();
 };

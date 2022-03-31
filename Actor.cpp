@@ -1,54 +1,26 @@
 #pragma once
 #include <iostream>
 #include "point.h"
-#include "Vector2D.h"
+#include "Vector3D.h"
 #include "BoundingBox.h"
 #include "Actor.h"
 
-class Actor
+Actor::Actor(const Vector3D& pos, const Vector3D& vel, const float lenght, const float weight, const float height):
+    position(pos), velocity(vel), lenght(lenght), weight(weight), height(height)
 {
-public:
-    Actor() :
-        aPos{ 0, 0 },
-        aVel{ aPos, aPos },
-        aHigh{ 0 },
-        aWeight{ 0 }
-        {}
+}
 
-        Actor(const Point& pos_, const Vector2D& vel_, const float high_, const float weight_) :
-            aPos(pos_),
-            aVel(vel_),
-            aHigh(high_),
-            aWeight(weight_)
-        {}
+Vector3D Actor::position(){
+    return 
+}
 
-        const Point& pos() const
-        {
-            return aPos;
-        }
+BoundingBox Actor::boundingBox(){
+    BoundingBox b1{mPos.x, mPos.y, mPos.z, mLength * 2, mWeight * 2, mHeight * 2 };
+}
 
-        const Vector2D& vel() const
-        {
-            return aVel;
-        }
+void Actor::update(float delta_tiempo){
+    mPos += (mVel*=delta_tiempo);
+}
 
-        const float high() const
-        {
-            return aHigh;
-        }
 
-        const float weight() const
-        {
-            return aWeight; 
-        }
 
-        void update(float delta_tiempo) const {
-            //aPos += delta_tiempo * aVel;
-            aPos += aVel.mulEscVec2D(delta_tiempo).endpoint()
-        }
-
-    private:
-        Point aPos;
-        Vector2D aVel;
-        float aHigh, aWeight;
-};
