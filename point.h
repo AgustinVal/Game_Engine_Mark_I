@@ -2,7 +2,7 @@
 
 struct Point
 {
-    float x, y;
+    float x, y, z;
 };
 
 std::ostream &operator<<(std::ostream &os, const Point &point);
