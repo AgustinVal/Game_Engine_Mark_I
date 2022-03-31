@@ -12,6 +12,10 @@ Vector3D operator+(const Vector3D& lhs, const Vector3D rhs);
 
 Vector3D operator-(const Vector3D& lhs, const Vector3D rhs);
 
+Vector3D operator+=(const Vector3D& lhs, const Vector3D rhs);
+
+Vector3D operator-=(const Vector3D& lhs, const Vector3D rhs);
+
 Vector3D operator*=(const Vector3D& vec, const float scl); //Multiplicar por escalar
 
 float operator*(const Vector3D& lhs, const Vector3D rhs); //Producto punto
