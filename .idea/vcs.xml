@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hello_cpp_libs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hello_cpp_libs/libs/dr_libs/source/dr_libs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hello_cpp_libs/libs/dr_libs/source/dr_libs/tests/external/miniaudio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hello_cpp_libs/libs/eigen/source/eigen" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hello_cpp_libs/libs/glfw/source/glfw" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hello_cpp_libs/libs/glm/source/glm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/hello_cpp_libs/libs/openal-soft/source/openal-soft" vcs="Git" />
+  </component>
+</project>
